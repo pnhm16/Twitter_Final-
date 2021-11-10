@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotifsActivity">
+
+    <Button
+        android:id="@+id/message"
+        android:layout_width="60dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="335dp"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="#2196F3"
+        android:clickable="true"
+        android:text="+"
+        android:textSize="30sp"
+        app:cornerRadius="80dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs_notif_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topnav" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_notif_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabs_notif_layout" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/topnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="348dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_logout"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/viewpro5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_avatar_human_male_man_people_person_profile_user_users_icon_1320190727966457290_0"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/homelogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_blacklogo" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/twitterBlue"
+        android:elevation="7dp"
+        app:labelVisibilityMode="selected"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DmsActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_compose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:layout_marginBottom="48dp"
+        android:src="@drawable/ic_twitter_compose"
+        android:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:text="Send a message, get a message"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="313dp"
+        android:layout_below="@id/textView28"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:text="Direct Messages are private conversations between you and other people on Twitter. Share Tweets, media, and more!"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView29"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#2196F3"
+        android:text="Write a message"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="40dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/topnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="348dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_logout"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/viewpro5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_avatar_human_male_man_people_person_profile_user_users_icon_1320190727966457290_0"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/homelogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_blacklogo" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="680dp">
+
+        <ImageView
+            android:id="@+id/homebu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_home"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/searchbu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/ic_search" />
+
+        <ImageView
+            android:id="@+id/notibu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_bell"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/messbu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_message"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

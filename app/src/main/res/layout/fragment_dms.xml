@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DmsFragment">
+
+    <Button
+        android:id="@+id/message"
+        android:layout_width="60dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="335dp"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="#2196F3"
+        android:clickable="true"
+        android:text="+"
+        android:textSize="30sp"
+        app:cornerRadius="80dp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:text="Send a message, get a message"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="313dp"
+        android:layout_below="@id/textView28"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:text="Direct Messages are private conversations between you and other people on Twitter. Share Tweets, media, and more!"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView29"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#2196F3"
+        android:text="Write a message"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="40dp" />
+
+
+
+
+
+</RelativeLayout>

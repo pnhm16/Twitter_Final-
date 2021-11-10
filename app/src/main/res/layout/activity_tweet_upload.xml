@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TweetUpload">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/topnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="69dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="9dp"
+            android:backgroundTint="#2196F3"
+            android:text="Cancel"
+            android:textSize="8dp"
+            app:cornerRadius="15dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="69dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="9dp"
+            android:backgroundTint="#2196F3"
+            android:text="Tweet"
+            android:textSize="8dp"
+            app:cornerRadius="15dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ava"
+
+        android:hint="What's happening?"
+        />
+
+    <ImageView
+        android:id="@+id/ava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/topnav"
+        android:layout_below="@id/topnav"
+        app:srcCompat="@drawable/ic_avatar_human_male_man_people_person_profile_user_users_icon_1320190727966457290_0" />
+</RelativeLayout>
